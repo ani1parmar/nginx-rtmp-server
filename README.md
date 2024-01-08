@@ -1,4 +1,4 @@
-# nginx-rtmp-server
+# nginx rtmp server
 
 ```
 sudo apt update
@@ -6,7 +6,7 @@ sudo apt install nginx
 sudo apt install libnginx-mod-rtmp
 ```
 
---- add rtmp config ---
+add rtmp config
 ```
 sudo nano /etc/nginx/nginx.conf
 
@@ -25,9 +25,12 @@ rtmp {
 }
 ```
 
-// restart nginx
+restart nginx
+```
 sudo systemctl restart nginx
+```
 
-
-// if needed to link
+if needed to link
+```
 sudo ln -s /usr/share/nginx/modules-available/mod-rtmp.conf /etc/nginx/modules-enabled/50-mod-rtmp.conf
+```
